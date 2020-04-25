@@ -16,3 +16,13 @@
 .shopping-header-title {
     font-size: 25px;
 }
+
+.cart-list-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-list-total {
+    border-top: 1px solid black;
+    text-align: right;
+}

@@ -10,6 +10,7 @@
 .inventory-container-list {
     height: 70%;
     padding: 10px;
+    overflow: auto;
 }
 
 .inventory-container-new {

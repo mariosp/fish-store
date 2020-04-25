@@ -12,8 +12,6 @@ const Inventory = () => {
     const products = useSelector(state => state.products.products);
     const dispatch = useDispatch();
 
-    console.log(products);
-
     const addNew = (product) => {
       const validForm = Object.values(product).every((value,index) => {
           if (index ===1 && isNaN(value)) {

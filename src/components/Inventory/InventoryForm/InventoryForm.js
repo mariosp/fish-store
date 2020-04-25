@@ -23,8 +23,6 @@ const InventoryForm = ({onchange, defaultValue}) => {
         setProduct(value => ({...value, [event.target.name]: event.target.value}));
     };
 
-    // console.log(product)
-
     return (
         <div className="form-container">
             <div className="row">

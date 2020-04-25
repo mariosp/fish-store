@@ -4,12 +4,13 @@ import ProductList from "../ProductList/ProductList";
 import ShoppingCart from "../ShoppingCart/ShoppingCart";
 import Inventory from "../Inventory/Inventory";
 import {useDispatch} from "react-redux";
-import { fetchProducts } from "../../redux/ActionCreators";
+import {fetchCartItems, fetchProducts} from "../../redux/ActionCreators";
 
 const Main = () => {
     const dispatch = useDispatch();
     useEffect(()=>{
-        dispatch(fetchProducts())
+        dispatch(fetchProducts());
+        dispatch(fetchCartItems());
 
     },[]);
     return (

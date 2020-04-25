@@ -20,7 +20,6 @@ export const Products = (state = {
             return {...state, products: newState};
         case ActionTypes.ADD_PRODUCTS:
             let products = action.payload;
-            // localStorage.setItem('products', JSON.stringify({...state, products: products }));
             return {...state, products: products};
         default:
             return state;

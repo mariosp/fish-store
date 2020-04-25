@@ -23,3 +23,8 @@
 .subtitle-text{
     color: orange;
 }
+
+.product-list{
+    height: auto;
+    overflow: auto;
+}
