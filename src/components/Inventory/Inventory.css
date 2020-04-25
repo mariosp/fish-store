@@ -1,0 +1,24 @@
+.inventory-container {
+    width: 100%;
+    border: 2px solid black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inventory-container-list {
+    height: 70%;
+}
+
+.inventory-container-new {
+    height: 30%;
+}
+
+.inventory-header {
+    height: 20%;
+}
+
+.inventory-header-title {
+    font-size: 25px;
+    text-align: center;
+}
