@@ -7,17 +7,15 @@ const ProductOptions = ()=> (
 );
 
 
-const InventoryForm = ({onchange}) => {
-    const [product, setProduct] = useState({
-        Title:'',
-        Price: '',
-        Status: 'available',
-        Description: '',
-        ImageUrl: ''
-    });
+const InventoryForm = ({onchange, defaultValue}) => {
+    const [product, setProduct] = useState(defaultValue);
 
     useEffect(()=>{
-        onchange(product)
+        setProduct(defaultValue)
+    },[defaultValue]);
+
+    useEffect(()=>{
+        onchange && onchange(product)
     },[product]);
 
     const handleChange = (event) => {

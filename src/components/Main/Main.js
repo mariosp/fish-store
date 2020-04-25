@@ -1,10 +1,17 @@
-import React from "react";
+import React, {useEffect} from "react";
 import './Main.css';
 import ProductList from "../ProductList/ProductList";
 import ShoppingCart from "../ShoppingCart/ShoppingCart";
 import Inventory from "../Inventory/Inventory";
+import {useDispatch} from "react-redux";
+import { fetchProducts } from "../../redux/ActionCreators";
 
 const Main = () => {
+    const dispatch = useDispatch();
+    useEffect(()=>{
+        dispatch(fetchProducts())
+
+    },[]);
     return (
         <div className="container">
             <div className="main">
